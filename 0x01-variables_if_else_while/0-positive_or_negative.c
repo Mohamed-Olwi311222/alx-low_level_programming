@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * main function is
+/** main function is
  * to check a random number if it is positive or negativeor zero
  *  and then print it
  */
