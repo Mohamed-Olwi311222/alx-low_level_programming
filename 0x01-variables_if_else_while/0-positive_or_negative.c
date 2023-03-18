@@ -1,7 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* betty style doc for function main goes there */
+/*
+ * a program to check a random number if it is positive or negativeor zero
+ *  and then print it
+ */
 int main(void)
 {
 	int n;
