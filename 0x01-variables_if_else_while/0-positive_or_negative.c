@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - check if the number is greater than 0
- * n is a random number to be checked
- * Return : Always 0 (Success)
+ * main - determine if a number is positive , negative or zero
+ *
+ * Return:  Always 0 (Success)
  */
 int main(void)
 {
