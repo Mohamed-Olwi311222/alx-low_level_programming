@@ -4,7 +4,7 @@
 /**
  * main - check if the number is greater than 0
  * n is a random number to be checked
- * Return : 0 if program function well
+ * Return : Always 0 (Success)
  */
 int main(void)
 {
