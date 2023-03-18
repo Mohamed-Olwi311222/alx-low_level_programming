@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** main function is
- * to check a random number if it is positive or negativeor zero
- *  and then print it
+/**
+ * main - check if the number is greater than 0
+ * n is a random number to be checked
+ * return 0 if the program function well
  */
 int main(void)
 {
