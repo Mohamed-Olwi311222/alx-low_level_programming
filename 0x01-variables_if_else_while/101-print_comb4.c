@@ -19,7 +19,7 @@ for (num1 = 0; num1 <= 9; num1++)
 	putchar('0' + num0);
 	putchar('0' + num1);
 	putchar('0' + num2);
-	if (num1 == 8 && num2 == 9 && num2 == 9)
+	if (num1 == 7 && num2 == 8 && num2 == 9)
 	{
 		putchar('\n');
 		return (0);
