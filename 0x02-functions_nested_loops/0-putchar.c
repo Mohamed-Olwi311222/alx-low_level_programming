@@ -4,18 +4,11 @@
  * main - print _putchar
  * Return: always 0 (success)
  */
-int t0(void)
+int main(void)
 {
 	char lol[] = "_putchar";
+	
+	printchar(lol);
 
-	int count;
-
-	int size;
-
-	size = sizeof(lol) / sizeof(lol[0]);
-
-	for (count = 0; count <= size; count++)
-		_putchar(lol[count]);
-	_putchar('\n');
 	return (0);
 }
