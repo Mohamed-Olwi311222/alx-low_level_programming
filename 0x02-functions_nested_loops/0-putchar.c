@@ -6,6 +6,13 @@
  */
 int main(void)
 {
-	printchar();
+	char lol[] = "_putchar";
+
+	int count = 0;
+
+	int size_of_array = sizeof(lol) / sizeof(lol[0]);
+
+
+	printchar(lol ,size_of_array ,count);
 	return (0);
 }
