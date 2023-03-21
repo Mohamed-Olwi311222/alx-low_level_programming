@@ -1,5 +1,9 @@
-void printchar(char chars[] ,int size_of_array)
+void printchar(void)
 {
+	char lol[] = "_putchar";
+	
+	int size_of_array = sizeof(lol) / sizeof(lol[0]);
+
         int count;
 
         for (count = 0; count <= size_of_array; count++)
