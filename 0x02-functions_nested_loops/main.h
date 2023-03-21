@@ -1,4 +1,4 @@
-#include "_puttchar.c"
+#include "_putchar.c"
 void printchar(void)
 {
 	char lol[] = "_putchar" ;
