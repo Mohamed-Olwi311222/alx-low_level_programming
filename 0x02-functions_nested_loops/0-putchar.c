@@ -1,9 +1,10 @@
 #include "_putchar.c"
+#include "main.hz"
 /**
- * t0 - print _putchar
+ * main - print _putchar
  * Return: always 0 (success)
  */
-int t0(void)
+int main(void)
 {
 	char lol[] = "_putchar";
 
