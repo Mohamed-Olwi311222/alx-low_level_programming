@@ -1,13 +1,8 @@
-void printchar(char chars[])
+void printchar(char chars[] ,int size_of_array)
 {
-        int count ;
+        int count;
 
-	int size ;
-
-
-        size = sizeof(chars) / sizeof(chars[0]);
-
-        for (count = 0; count <= size; count++)
+        for (count = 0; count <= size_of_array; count++)
                 _putchar(chars[count]);
         _putchar('\n');
         return;
