@@ -1,4 +1,3 @@
-#include "_putchar.c"
 void printchar(char lol[], int size_of_array ,int count)
 {
 
