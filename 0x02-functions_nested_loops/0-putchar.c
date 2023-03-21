@@ -4,11 +4,13 @@
  *
  * Return: always 0 (success)
  */
+void printChar(void);
 int main(void)
 {
-	putChar();
+	printChar();
+	return (0);
 }
-void putChar(void)
+void printChar(void)
 {
-	printf("_putchar");
+	printf("_putchar\n");
 }
