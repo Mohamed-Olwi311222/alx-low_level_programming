@@ -1,16 +1,20 @@
-#include <stdio.h>
+#include "_putchar.c"
 /**
- * main - call a function to print "_putchar"
- *
+ * t0 - print _putchar
  * Return: always 0 (success)
  */
-void printChar(void);
-int main(void)
+int t0(void)
 {
-	printChar();
+	char lol[] = "_putchar";
+
+	int count;
+
+	int size;
+
+	size = sizeof(lol) / sizeof(lol[0]);
+
+	for (count = 0; count <= size; count++)
+		_putchar(lol[count]);
+	_putchar('\n');
 	return (0);
-}
-void printChar(void)
-{
-	printf("_putchar\n");
 }
