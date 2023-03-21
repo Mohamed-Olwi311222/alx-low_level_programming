@@ -4,7 +4,7 @@
  * main - print _putchar
  * Return: always 0 (success)
  */
-int main(void)
+int t0(void)
 {
 	char lol[] = "_putchar";
 
