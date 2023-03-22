@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char lol[] = "_putchar";
+	char lol[] = "_putchar ";
 
 	int count = 0;
 
