@@ -1,4 +1,4 @@
-#include "o1-main.h"
+#include "main.h"
 /**
  * main - print alphabets
  *
