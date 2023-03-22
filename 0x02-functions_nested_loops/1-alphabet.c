@@ -6,8 +6,6 @@
  */
 int main(void)
 {
-	int count;
-
 	char ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
