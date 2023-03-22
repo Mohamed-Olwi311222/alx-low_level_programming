@@ -12,7 +12,7 @@ int _islower(int c){
 	int is_lower = islower(ch);
 
 	if (is_lower == 0)
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }
