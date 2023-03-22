@@ -1,14 +1,9 @@
-#include "main2.h"
+#include "main.h"
 /**
- * main - print alphabets
+ * print_alphabet - print alphabets
  *
  * Return: always 0 (success)
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 void print_alphabet(void)
 {
 	char ch;
