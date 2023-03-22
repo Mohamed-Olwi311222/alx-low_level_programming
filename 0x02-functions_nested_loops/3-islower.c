@@ -3,7 +3,7 @@
 /**
  * _islower - see if its lowercase or not
  *
- * @parameters: char c from main3 as an int (ascii)
+ * @parameter c: char c from main3 as an int (ascii)
  *
  * Return: 1 if its lowercase otherwise 0
  */
