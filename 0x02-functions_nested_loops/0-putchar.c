@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * main - print _putchar
  *
@@ -16,4 +15,10 @@ int main(void)
 
 	printchar(lol ,size_of_array ,count);
 	return (0);
+}
+void printchar (char arr[] ,int size_of_array ,int count)
+{
+	for (count = 0; count < size_of_array; count++)
+		_putchar(arr[count]);
+	_putchar('\n');
 }

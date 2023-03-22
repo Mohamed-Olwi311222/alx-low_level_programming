@@ -1,9 +1,5 @@
-void printchar(char lol[], int size_of_array ,int count)
-{
-
-
-	for (count = 0; count < size_of_array; count++)
-		_putchar(lol[count]);
-	_putchar('\n');
-	return;
-}
+#ifndef MAIN_H
+#DEFINE MAIN_H
+int _putchar(char c);
+void printchar (char arr[] ,int size_of_array ,int count);
+#ENDIF
