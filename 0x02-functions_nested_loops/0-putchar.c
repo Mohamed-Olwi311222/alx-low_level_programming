@@ -13,7 +13,7 @@ int main(void)
 	int size_of_array = sizeof(lol) / sizeof(lol[0]);
 
 	
-	for (count = 0; count < size_of_array; count++)
+	for (count = 0; count <= size_of_array; count++)
 		_putchar(lol[count]);
 	_putchar('\n');
 
