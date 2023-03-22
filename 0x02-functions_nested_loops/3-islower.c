@@ -9,7 +9,7 @@ int _islower(int c){
 
 	char ch = c;
 
-	int is_lower = islower(c);
+	int is_lower = islower(ch);
 
 	if (is_lower = 0)
 		return (1);
