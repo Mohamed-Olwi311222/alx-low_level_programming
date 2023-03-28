@@ -6,10 +6,11 @@
  */
 void puts_half(char *str)
 {
-	int middle = strlen(str) / 2;
+	int middle = (strlen(str) / 2) - 1;
+	int final = strlen(str);
 	int i;
 
-	for (i = 0; i < middle; i++)
+	for (i = middle; i < final; i++)
 		_putchar(str[i]);
 	_putchar('\n');
 }
