@@ -6,7 +6,10 @@
  */
 void puts_half(char *str)
 {
-	int middle =ceil((double)strlen(str) / 2);
+	int middle;
+	
+	middle = ceil((double)strlen(str) / 2);
+
 	int final = strlen(str);
 	int i;
 	
