@@ -8,7 +8,7 @@ void rev_string(char *s)
 {
 	int length = strlen(s) + 1;
 	int start = 0;
-	int end = length - 10;
+	int end = length - 1;
 
 	char copy[length];
 
