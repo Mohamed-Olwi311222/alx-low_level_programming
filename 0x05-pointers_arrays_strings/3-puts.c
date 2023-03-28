@@ -6,5 +6,10 @@
  */
 void _puts(char *str)
 {
-	puts(str);
+	int i;
+
+	int length = strlen(str);
+
+	for(i = 0; i <= length; i++)
+		_putchar(str[i]);
 }
