@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * puts_half - prints half the string from main
  * @str: recive it from main
