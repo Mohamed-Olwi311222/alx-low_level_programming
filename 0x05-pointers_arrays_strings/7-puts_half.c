@@ -10,7 +10,10 @@ void puts_half(char *str)
 	
 	middle = ceil((double)strlen(str) / 2);
 
-	int final = strlen(str);
+	int final;
+
+	final = strlen(str);
+
 	int i;
 	
 	for (i = middle; i < final; i++)
