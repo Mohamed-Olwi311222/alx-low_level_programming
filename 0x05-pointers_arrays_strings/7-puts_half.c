@@ -7,14 +7,11 @@
 void puts_half(char *str)
 {
 	int middle;
+	int final;
+	int i;
 	
 	middle = ceil((double)strlen(str) / 2);
-
-	int final;
-
 	final = strlen(str);
-
-	int i;
 	
 	for (i = middle; i < final; i++)
 		_putchar(str[i]);
