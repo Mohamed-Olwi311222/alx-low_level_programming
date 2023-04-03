@@ -4,7 +4,7 @@
  * @dest: destination of the copy
  * @src: source of the string
  * @n: number of chars to end at
- * return: @dest to main
+ * Return: @dest to main
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -14,8 +14,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	for(count = 0; count < n; count++)
 	{
 
-		b = src[i];
-		dest[i] = b;
+		tmp = src[count];
+		dest[count] = tmp;
 	}
-	return dest;
+	return (dest);
 }
