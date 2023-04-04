@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	int inner_loop;
 	char tmp;
 	int length;
-	static char new_s[(sizeof(s) / sizeof(s[0])) + 1];
+	static char new_s[99];
 	char *pr_2_New_s = new_s;
 
 	length = strlen(s);
