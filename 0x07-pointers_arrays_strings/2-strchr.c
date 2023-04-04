@@ -23,7 +23,6 @@ char *_strchr(char *s, char c)
 			for (inner_loop = outer_loop; inner_loop < length; inner_loop++)
 			{
 				tmp = s[inner_loop];
-				new_s = s[inner_loop];
 				new_s[inner_loop - outer_loop] = tmp;
 			}
 			return (pr_2_New_s);
