@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * _puts_recursion - print @s with recursion by pointer arithmetic
+ * _print_rev_recursion - print @s with recursion by pr arithmetic in reverse
  *
  * @s: get it from main
  */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s);
 {
 	if (*s != '\0')
 	{
-		_puts_recursion(s + 1);
+		_print_rev_recursion(s + 1);
 		printf("%c", *s);
 	}
 	else
