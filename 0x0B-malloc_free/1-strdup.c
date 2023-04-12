@@ -4,13 +4,16 @@
  *
  * @str: string	to dup
  *
- * Return: NULL if str == NULL , pointer ptr otherwise
+ * Return: NULL if str == NULL , pointer dup otherwise
  **/
 char *_strdup(char *str)
 {
 	int length;
 	int i;
 	char *dup;
+
+	if (str == NULL)
+		return (NULL);
 
 	while (str[length] != '\0')
 		length++;
