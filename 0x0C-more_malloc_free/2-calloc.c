@@ -9,10 +9,13 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
 	int *ptr;
 
 	ptr = (int *) calloc(nmemb, size);
-	if (ptr == NULL || nmemb == 0 || size == 0)
+	if (ptr == NULL)
 		return (NULL);
 	return (ptr);
 }
