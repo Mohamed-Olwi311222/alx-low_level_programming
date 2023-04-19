@@ -44,8 +44,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->age = age;
 	dog->owner = _strncpy(dog->owner, owner);
 
-	if (dog != NULL)
-		return (dog);
-	else
-		return (NULL);
+	return (dog);
 }
