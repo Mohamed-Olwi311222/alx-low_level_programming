@@ -7,6 +7,6 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (size != 0)
+	if (size != 0 && array != NULL)
 		action(array[size]);
 }
