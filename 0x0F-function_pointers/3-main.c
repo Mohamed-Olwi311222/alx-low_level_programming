@@ -15,14 +15,14 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	a = atoi(argv[1]);
-	b = atoi(arg[3]);
+	b = atoi(argv[3]);
 	op = get_op_func(argv[1]);
 	if (op == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (argv[1] == '/' || arg[1] == '%' && atoi(argv[3]) == 0)
+	if (argv[1][0] == '/' || ((argv[1][0] == '%') && (atoi(argv[3]) == 0)))
 	{
 		printf("Error\n");
 		exit(100);
