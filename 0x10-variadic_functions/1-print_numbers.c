@@ -1,14 +1,14 @@
 #include "variadic_functions.h"
 /**
- * print_number - print numbers given to it
- * @seperator: seperator of the nums
+ * print_numbers - print numbers given to it
+ * @separator: seperator of the nums
  * @n: the number of args
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list nptr;
 	unsigned int i;
-	
+
 	if (separator == NULL)
 		separator = "";
 
