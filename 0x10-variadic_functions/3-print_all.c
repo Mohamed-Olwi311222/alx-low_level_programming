@@ -24,7 +24,7 @@ void _int(char *separator, va_list n)
  */
 void _float(char *separator, va_list n)
 {
-	printf("%s%f", separator, va_arg(n, float));
+	printf("%s%f", separator, va_arg(n, double));
 }
 /**
  * _string - prints a string
@@ -70,6 +70,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == form[j].x[0])
 			{
 				form[j].f(separator, ptr);
+				separator = ", ";
 			}
 			j++;
 		}
