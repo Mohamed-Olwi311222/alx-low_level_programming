@@ -1,4 +1,4 @@
-#include "variadic_functions"
+#include "variadic_functions.h"
 /**
  * print_number - print numbers given to it
  * @seperator: seperator of the nums
@@ -9,13 +9,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list nptr;
 	unsigned int i;
 	
-	if (seperator == NULL)
-		seperator = "";
+	if (separator == NULL)
+		separator = "";
 
 	va_start(nptr, n);
 	for (i = 1; i <= n; i++)
 	{
-		printf("%d%s", va_arg(nptr, unsigned int), seperator); 
+		printf("%d", va_arg(nptr, unsigned int));
+		if (i < n)
+			printf("%s", separator);
 	}
+	printf("\n");
 	va_end(nptr);
 }
