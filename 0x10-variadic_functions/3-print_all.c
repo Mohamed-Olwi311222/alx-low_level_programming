@@ -59,7 +59,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-	separator = 0;
+	separator = "";
 	i = 0;
 	va_start(ptr, format);
 	while (format != NULL && format[i])
