@@ -2,7 +2,7 @@
 /**
  * _char - prints a char
  * @separator: separator of them
- * @b: the argument pointer
+ * @n: the argument pointer
  */
 void _char(char *separator, va_list n)
 {
@@ -39,7 +39,7 @@ void _string(char *separator, va_list n)
 
 	if (str == NULL)
 		str = "(nil)";
-	printf("%s%s", separator, str);0
+	printf("%s%s", separator, str);
 }
 /**
  * print_all - print all types
@@ -49,18 +49,18 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	int i, j;
-	char * separator;
-	_type form;
+	char *separator;
 
-	separator = "";
-	i = 0;
-	form[] = {
+	_type form[] = {
 		{"c", _char},
 		{"i", _int},
 		{"f", _float},
 		{"s", _string},
 		{NULL, NULL}
 	};
+
+	separator = 0;
+	i = 0;
 	va_start(ptr, format);
 	while (format != NULL && format[i])
 	{
