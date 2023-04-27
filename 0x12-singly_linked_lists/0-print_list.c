@@ -1,10 +1,10 @@
 #include "lists.h"
 size_t print_list(const list_t *h)
 {
-    size_t count, lens;
+    size_t count;
 
     count = 0;
-    while (h != NULL)
+    while (h)
     {
         count++;
         if (h->str == NULL)
@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
         else
         {
             lens = strlen(h->str);
-           printf("[%d] %s\n", lens, h->str);
+           printf("[%d] %s\n", strlen(h->str), h->str);
         }
         h = h->next;
     }
