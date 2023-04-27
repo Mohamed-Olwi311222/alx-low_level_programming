@@ -10,9 +10,9 @@ int _strlen(char *s)
 
 	if (s == NULL)
 		return (0);
-	while (*s++ != NULL)
-		i++;
-	return (i);
+	while (*s++)
+		c++;
+	return (c);
 }
 /**
  * print_list - print a linked list
