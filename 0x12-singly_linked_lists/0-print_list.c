@@ -1,7 +1,7 @@
 #include "lists.h"
 size_t print_list(const list_t *h)
 {
-    int count, lens;
+    size_t count, lens;
 
     count = 0;
     while (h != NULL)
