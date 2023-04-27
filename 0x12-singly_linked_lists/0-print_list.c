@@ -1,7 +1,8 @@
+#include "lists.h"
 size_t print_list(const list_t *h)
 {
     list_t *node;
-    int count;
+    int count, lens;
 
     node = h;
     count = 0;
@@ -14,7 +15,8 @@ size_t print_list(const list_t *h)
         }
         else
         {
-        printf("%s\n",node->str);
+            lens = strlen(node->str);
+            printf("[%d] %s\n", lens, node->str);
         }
         node = node->next;
     }
