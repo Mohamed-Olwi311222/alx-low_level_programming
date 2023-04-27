@@ -1,7 +1,7 @@
 #include "lists.h"
 size_t print_list(const list_t *h)
 {
-    int count;
+    int count, lens;
 
     count = 0;
     while (h != NULL)
@@ -13,7 +13,8 @@ size_t print_list(const list_t *h)
         }
         else
         {
-           printf("[%d] %s\n", h->len, h->str);
+            lens = strlen(h->str);
+           printf("[%d] %s\n", lens, h->str);
         }
         h = h->next;
     }
