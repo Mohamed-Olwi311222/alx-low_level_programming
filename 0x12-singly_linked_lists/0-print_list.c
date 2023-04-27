@@ -2,7 +2,7 @@
 size_t print_list(const list_t *h)
 {
     list_t *node;
-    int count, lens;
+    int count;
 
     node = h;
     count = 0;
@@ -15,8 +15,7 @@ size_t print_list(const list_t *h)
         }
         else
         {
-            lens = strlen(node->str);
-            printf("[%d] %s\n", lens, node->str);
+           printf("[%d] %s\n", node->len, node->str);
         }
         node = node->next;
     }
