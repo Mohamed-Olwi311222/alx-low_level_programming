@@ -20,12 +20,8 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 		}
 	}
-	else
-	{
-		newnode->len = _strlen(newnode->str);
-		newnode->next = *head;
-		*head = newnode;
-	}
-
+	newnode->len = _strlen(newnode->str);
+	newnode->next = *head;
+	*head = newnode;
 	return (newnode);
 }
