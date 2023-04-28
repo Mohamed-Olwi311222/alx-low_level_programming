@@ -22,20 +22,21 @@ int _strlen(char *s)
  */
 size_t print_list(const list_t *h)
 {
+	list_t *n = h;
 	size_t count = 0;
 
-	while (h)
+	while (n)
 	{
 		count++;
-		if (h->str == NULL)
+		if (n->str == NULL)
 		{
 			printf("[0] (nil)\n");
 		}
 		else
 		{
-			printf("[%d] %s\n", _strlen(h->str), h->str);
+			printf("[%d] %s\n", _strlen(n->str), n->str);
 		}
-		h = h->next;
+		n = n->next;
 	}
 	return (count);
 }
