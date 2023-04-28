@@ -23,8 +23,9 @@ int _strlen(char *s)
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
+	const list_t *tmp;
 
-	for (const list_t *tmp = h; tmp != NULL; tmp = tmp->next)
+	for (tmp = h; tmp != NULL; tmp = tmp->next)
 	{
 		printf("[%d] %s\n", _strlen(tmp->str), tmp->str ? tmp->str : "(nil)");
 		count++;
