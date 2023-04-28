@@ -23,12 +23,13 @@ int _strlen(char *s)
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	const list_t *tmp;
+	const list_t *tmp = h;
 
-	for (tmp = h; tmp != NULL; tmp = tmp->next)
+	while (tmp)
 	{
 		printf("[%d] %s\n", _strlen(tmp->str), tmp->str ? tmp->str : "(nil)");
 		count++;
+		tmp = tmp->next;
 	}
 	return (count);
 }
