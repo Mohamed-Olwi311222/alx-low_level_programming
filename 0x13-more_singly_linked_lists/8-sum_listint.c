@@ -1,4 +1,4 @@
-#include "lisits.h"
+#include "lists.h"
 /**
  * sum_listint - gets the sum if int
  * @head: head of the list
