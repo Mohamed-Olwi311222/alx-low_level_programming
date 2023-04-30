@@ -12,7 +12,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	while (ptr && idx < index)
 	{
-		ptr = head->next;
+		ptr = ptr->next;
 		idx++;
 	}
 	return (ptr);
