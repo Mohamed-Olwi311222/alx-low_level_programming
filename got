@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo git add .; sudo git commit -m "task"; sudo git push
