@@ -11,7 +11,7 @@ bool check_pallindrome(char *s, int i, int j)
 	if (i > j)
 		return (true);
 	else if (s[i] == s[j])
-		return check_pallindrome(s, i + 1, j - 1);
+		return (check_pallindrome(s, i + 1, j - 1));
 	else
 		return (false);
 }
@@ -27,7 +27,7 @@ int is_palindrome(char *s)
 
 	if (size == 0 || size == 1)
 		return (1);
-	
+
 	ans = check_pallindrome(s, 0, size - 1);
 	if (ans == false)
 		return (0);
