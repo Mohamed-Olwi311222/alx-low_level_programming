@@ -6,14 +6,14 @@
  * @j: right index
  * Return: 1 if i > j as its now pallindrom otherwise 0
  */
-int tmp(char *s, int i, int j)
+bool tmp(char *s, int i, int j)
 {
 	if (i > j)
-		return (1);
+		return (true);
 	else if (s[i] == s[j])
 		tmp(s, i + 1, j - 1);
 	else
-		return (0);
+		return (false);
 }
 /**
  * is_palindrome - check if the string @s is pallindrome
@@ -24,12 +24,12 @@ int is_palindrome(char *s)
 {
 	int i = 0;
 	int size = 0;
-	int j = 0;
+	bool ans = false;
 
 	while (s[size] != '\0')
 		size++;
 	j = tmp(s, i, size);
-	if (j == 0)
+	if (j == false)
 		return (0);
 	else
 		return (1);
