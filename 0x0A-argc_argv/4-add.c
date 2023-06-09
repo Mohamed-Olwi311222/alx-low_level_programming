@@ -9,7 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i;
+
+       long int add = 0;
 
 	if (argc == 1)
 	{
@@ -26,6 +28,6 @@ int main(int argc, char *argv[])
 		}
 		add += atoi(argv[i]);
 	}
-	printf("%i\n", add);
+	printf("%li\n", add);
 	return (0);
 }
