@@ -6,6 +6,8 @@
  */
 int main(int argc, char *argv[])
 {
+	if (argv == NULL)
+		return (1);
 	printf("%i\n", argc - 1);
 	return (0);
 }
