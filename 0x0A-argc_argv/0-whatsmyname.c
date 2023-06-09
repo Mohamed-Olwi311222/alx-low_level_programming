@@ -5,7 +5,7 @@
  * @argv: the array that contains the command line args
  * Return: always 0
  */
-int myname(int argc, char *argv[])
+int name(int argc, char *argv[])
 {
 	printf("%s\n", argv[argc - argc]);
 	return (0);
