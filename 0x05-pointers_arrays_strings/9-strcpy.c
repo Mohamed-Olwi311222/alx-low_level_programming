@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * char *_strcpy - copy string from 2nd parm to 1st
  * @dest: array from main
@@ -11,7 +12,7 @@ char *_strcpy(char *dest, char *src)
 	int len;
 	int i;
 
-	len = _strlen(src);
+	len = strlen(src);
 	for (i = 0; i <= len; i++)
 	{
 		tmp = src[i];
