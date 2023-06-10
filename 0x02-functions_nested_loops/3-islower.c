@@ -3,19 +3,13 @@
 /**
  * _islower - see if its lowercase or not
  *
- * @parameter c: char c from main3 as an int (ascii)
+ * @c: char c from main3 as an int (ascii)
  *
  * Return: 1 if its lowercase otherwise 0
  */
 int _islower(int c)
 {
-
-	char ch = c;
-
-	int is_lower = islower(ch);
-
-	if (is_lower == 0)
-		return (0);
-	else
+	if (c >= 97 && c != 123)
 		return (1);
+	return (0);
 }
