@@ -11,7 +11,7 @@ void print_to_98(int n)
 	{
 		_putchar('9');
 		_putchar('8');
-	=}
+	}
 
 	if (n < 98)
 		for (i = n; i <= 98; i++)
