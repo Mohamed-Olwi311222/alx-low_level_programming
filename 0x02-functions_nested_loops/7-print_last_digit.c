@@ -6,7 +6,7 @@
  */
 int print_last_digit(int n)
 {
-	int last_digit;
+	long int last_digit;
 	char last_digit_char;
 
 	if (n < 0)
