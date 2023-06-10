@@ -8,11 +8,7 @@
  */
 int _isupper(int c)
 {
-	char ch = c;
-
-	int is_upper = isupper(ch);
-
-	if (is_upper > 0)
+	if (c >= 65 && c <= 90)
 		return (1);
 	else
 		return (0);
