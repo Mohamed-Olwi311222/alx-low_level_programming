@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - check the code
  *
@@ -6,6 +7,6 @@
  */
 int main(void)
 {
-    print_alphabet();
+    jack_bauer();
     return (0);
 }
