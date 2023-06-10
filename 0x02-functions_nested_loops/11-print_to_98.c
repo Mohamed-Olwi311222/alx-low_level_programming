@@ -6,17 +6,19 @@
 void print_to_98(int n)
 {
 	int i;
+	char s;
 
 	if (n == 98)
 	{
-		_putchar('9');
-		_putchar('8');
+		s = '0' + 98;
+		_putchar(s);
 	}
 
 	if (n < 98)
 		for (i = n; i <= 98; i++)
 		{
-			_putchar('0' + i);
+			s = '0' + i;
+			_putchar(s);
 			if (i == 98)
 				break;
 			_putchar(',');
@@ -25,7 +27,8 @@ void print_to_98(int n)
 	else
 		for (i = n; i >= 98; i++)
 		{
-			_putchar('0' + i);
+			s = '0' + i;
+			_putchar(s);
 			if (i == 98)
 				break;
 			_putchar(',');
