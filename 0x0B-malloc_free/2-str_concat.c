@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i <= length1; i++)
 	{
 		tmp = *(s1 + i);
-		(str + i) = tmp;
+		*(str + i) = tmp;
 	}
 	for (i = length1; i < sum; i++)
 	{
