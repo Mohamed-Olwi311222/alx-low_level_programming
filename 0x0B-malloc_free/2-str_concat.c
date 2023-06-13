@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * str_concat - concatenates two arrays of chars
+ * @s1: array 1
+ * @s2: array 2
+ * Return: a new array containing both @s1 & @s2
+ */
 char *str_concat(char *s1, char *s2)
 {
 	int length1 = 0, length2 = 0, sum = 0, i = 0, x = 0;
