@@ -22,18 +22,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = sl2;
 	sum = sl2 + n + 1;
 
-	ptr = (char *) malloc(sum);
+	ptr = (char *) calloc(sum, sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 
 	for (i = 0; i <= sl1; i++)
 		*(ptr + i) = *(s1 + i);
 
-	for (i = sl1, k = 0; i < sum; i++, k++)
-	{
-		if (k == n)
-			break;
+	for (i = sl1, k = 0; i < n; i++, k++)
 		*(ptr + i) = *(s2 + k);
-	}
+	
+	*(ptr + n + sl1) = '\0';
 	return (ptr);
 }
