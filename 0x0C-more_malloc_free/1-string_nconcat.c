@@ -8,7 +8,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int sl1 = strlen(s1), sl2 = strlen(s2), sum, i, k;
+	unsigned int sl1 = strlen(s1), sl2 = strlen(s2), sum, k, i;
 	char *ptr;
 
 	if (sl2 <= n)
@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < sl1; i++)
 		*(ptr + i) = *(s1 + i);
 
-	for (i = sl1, k = 0; i < n; i++, k++)
+	for (i = sl1, k = 0; i < sum - sl1; i++, k++)
 		*(ptr + i) = *(s2 + k);
 	return (ptr);
 }
