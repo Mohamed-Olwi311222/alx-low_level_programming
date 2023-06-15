@@ -26,11 +26,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i < sl1; i++)
+	for (i = 0; i <= sl1; i++)
 		*(ptr + i) = *(s1 + i);
 
-	for (i = sl1, k = 0; i < sum - sl1; i++, k++)
+	for (i = sl1, k = 0; i < sum; i++, k++)
+	{
+		if (k == n)
+			break;
 		*(ptr + i) = *(s2 + k);
-	*(ptr + i) = '\0';
+	}
 	return (ptr);
 }
