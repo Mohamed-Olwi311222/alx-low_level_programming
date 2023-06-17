@@ -1,5 +1,11 @@
 #include "main.h"
-char * _memset(char *s, unsigned int n)
+/**
+ * _memset - assign default values to @s
+ * @s: array of chars
+ * @n: size of array
+ * Return: a pointer to the array with def values
+ */
+char *_memset(char *s, unsigned int n)
 {
 	char def = 0;
 	char *ptr = s;
@@ -8,7 +14,7 @@ char * _memset(char *s, unsigned int n)
 		return (NULL);
 	while (n--)
 		*s++ = def;
-	return(ptr);
+	return (ptr);
 }
 /**
  * _Calloc - allocates memory for an array
