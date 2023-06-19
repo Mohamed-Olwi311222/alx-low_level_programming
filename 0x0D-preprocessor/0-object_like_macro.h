@@ -1,4 +1,4 @@
-#ifndef 0_OBJECTS_LIKE_MACRO_H
-#define 0_OBJECTS_LIKE_MACRO_H
+#ifndef _OBJECTS_LIKE_MACRO_H
+#define _OBJECTS_LIKE_MACRO_H
 #define SIZE 1024
 #endif
