@@ -6,15 +6,20 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i;
+	unsigned int i;
 	va_list ptr;
-	char *s = separator;
 
-	if (s == NULL)
-		s = '';
+	if (separator == NULL)
+		separator = "";
 	if (!n)
 		return;
 	va_start(ptr,n);
-	for (i = 2; i <= n; i++)
-		_putchar((char) va_arg(ptr, n));
+	for (i = 1; i <= n; i++)
+	{
+		printf("%d", va_arg(ptr, unsigned int));
+		if (i < n)
+			printf("%s", separator);
+	}
+	printf("\n");
+	va_end(ptr);
 }
