@@ -51,10 +51,10 @@ void print_all(const char * const format, ...)
 	char *separator;
 
 	_type type[] = {
-		{"%s", _string},
-		{"%c", _char},
-		{"%i", _int},
-		{"%f", _float},
+		{"s", _string},
+		{"c", _char},
+		{"i", _int},
+		{"f", _float},
 		{NULL, NULL}
 	};
 
