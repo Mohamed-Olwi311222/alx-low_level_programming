@@ -8,7 +8,7 @@ void _string(char *separator, va_list ptr)
 {
 	char *str;
 
-	str == va_arg(ptr, char *);
+	str = va_arg(ptr, char *);
 	if (str == NULL)
 		str = "(nil)";
 	printf("%s%s", separator, str);
@@ -54,13 +54,14 @@ void print_all(const char * const format, ...)
 		{"%s", _string},
 		{"%c", _char},
 		{"%i", _int},
-		{"%f", _float}
+		{"%f", _float},
+		{NULL, NULL}
 	};
 
 	i = 0;
 	separator = "";
 	va_start(ptr, format);
-	while (format && format[i])
+	while (format != NULL && format[i])
 	{
 		j = 0;
 		while (type[j].s != NULL)
