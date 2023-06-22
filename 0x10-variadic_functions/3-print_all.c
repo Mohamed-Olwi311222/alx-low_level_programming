@@ -9,8 +9,8 @@ void _string(char *separator, va_list ptr)
 	char *str;
 
 	str == va_arg(ptr, char *);
-	if (str == NULL0
-			str = "(nil)"
+	if (str == NULL)
+		str = "(nil)";
 	printf("%s%s", separator, str);
 }
 /**
