@@ -2,7 +2,7 @@
 /**
  * _strlen - get the length of the string
  * @s: string to count the length of it
- * ReturnL the length of the string
+ * Return: the length of the string
  */
 int _strlen(char *s)
 {
@@ -30,6 +30,5 @@ size_t print_list(const list_t *h)
 		count++;
 		ptr = ptr->next;
 	}
-	printf("-> %li elements\n", count);
 	return (count);
 }
