@@ -2,9 +2,9 @@ section .data
     hello db 'Hello, Holberton!', 10  ; define the string to print with a newline character
 
 section .text
-    global _start
+    global main
 
-_start:
+main:
     ; print the string to the console
     mov rax, 1         ; system call for "write"
     mov rdi, 1         ; file descriptor for stdout
