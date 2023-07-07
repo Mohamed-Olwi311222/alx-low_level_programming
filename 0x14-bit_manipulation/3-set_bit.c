@@ -3,15 +3,15 @@
  * set_bit - sets the value of a bit at a given index
  * @n: the number given
  * @index: index given
- * Return: the new value
+ * Return: 1 if success otherwise -1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	int one = 1;
+	int set = 1;
 
 	if (index > sizeof(unsigned long int) * 8 || !n)
 		return (-1);
-	one = 1 << index;
-	*n = *n | one;
+	set = 1 << index;
+	*n = *n | set;
 	return (1);
 }
