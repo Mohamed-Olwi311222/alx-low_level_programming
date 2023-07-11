@@ -21,7 +21,12 @@ void copyContentToCreatedFile(const char *file_from, const char *file_to)
 
 	while ((bytes_read = read(from, buffer, sizeof(buffer))) > 0)
 	{
-		write(to, buffer, bytes_read);
+		if (write(to, buffer, bytes_read) != bytes_read)
+		{
+			fprintf(stderr, "Error: Can't write to %s", file_to);
+			close(from);
+			exit(99);
+		}
 	}
 
 	closefrom = close(from);
@@ -41,17 +46,16 @@ void copyContentToCreatedFile(const char *file_from, const char *file_to)
  */
 int main(int argc, char *argv[])
 {
-	int file_from = 1;
 
 	if (argc != 3)
 	{
 		fprintf(stderr, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	if ((access(argv[file_from], F_OK | R_OK)) != 0)
+	if ((access(argv[1], F_OK | R_OK)) != 0)
 	{
 		fprintf(stderr, "Error: Can't read from file %s", argv[1]);
-		exit(99);
+		exit(98);
 	}
 
 	copyContentToCreatedFile(argv[1], argv[2]);
