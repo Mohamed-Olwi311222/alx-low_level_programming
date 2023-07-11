@@ -33,6 +33,12 @@ void copyContentToCreatedFile(const char *file_from, const char *file_to)
 		exit(100);
 	}
 }
+/**
+ * main - copy content from file to another
+ * @argc: length of argv
+ * @argv: array of arguments
+ * Return: return 0 if success
+ */
 int main(int argc, char *argv[])
 {
 	int file_from = 1;
