@@ -8,9 +8,12 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
+	char *empty = " ";
 
 	if (filename == NULL)
 		return (-1);
+	if (text_content == NULL)
+		text_content = empty;
 	if (access(filename, F_OK) == -1)
 	{
 		fd = open(filename, O_CREAT | O_WRONLY, 0600);
@@ -21,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (fd == -1)
 		return (-1);
-	if((write(fd, text_content, sizeof(text_content))) == -1 )
+	if ((write(fd, text_content, sizeof(text_content))) == -1)
 		return (-1);
 	return (1);
 
