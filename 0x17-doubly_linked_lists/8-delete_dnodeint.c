@@ -21,7 +21,7 @@ size_t listLen(dlistint_t *h)
 
 /**
  * delete_dnodeint_at_index - delete the required node
- * @h: head of the list
+ * @head: head of the list
  * @index: index of the wanted node to be removed
  * Return: the value inside the deleted node
  */
