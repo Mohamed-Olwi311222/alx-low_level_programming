@@ -31,12 +31,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	size_t length = listLen(*h), curr = 0;
 	dlistint_t *node = NULL, *newnode = create_new_node(n);
 
-	if (!h || idx > (length - 1) || !newnode)
+	if (!h || idx > length || !newnode)
 		return (NULL);
 
 	if (idx == 0)
 	{
 		newnode->next = *h;
+		if (*h)
+			(*h)->prev = newnode;
 		(*h) = newnode;
 	}
 	else
