@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
  * add_dnodeint - add a new node at the beginning
  * @head: head of the list
  * @n: the value to store  inside the newnode
@@ -17,6 +17,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		*head = newnode;
 	else
 	{
+		*(head)->prev = newnode;
 		newnode->next = *head;
 		*head = newnode;
 	}
