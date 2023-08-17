@@ -22,7 +22,7 @@ size_t listLen(dlistint_t *h)
 /**
  * insert_dnodeint_at_index - insert at the required index
  * @h: head of the list
- * @idex: index to insert at
+ * @idx: index to insert at
  * @n: value stored of the new node
  * Return: the address of the new node or NULL if failed
  */
@@ -37,7 +37,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx == 0)
 	{
 		newnode->next = *h;
-		(*h)->next = newnode;
+		(*h) = newnode;
 	}
 	else
 	{
@@ -54,7 +54,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		}
 		newnode->next = node->next;
 		newnode->prev = node;
-		node->next =newnode;
+		node->next = newnode;
 		node = newnode->next;
 		node->prev = newnode;
 	}
